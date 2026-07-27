@@ -3,7 +3,7 @@
 client_id = "ffade43bcf9f84fe06dc026f189cbcd5"
 name = "h7-bulk-discount-app"
 # application_url = "https://example.com"
-application_url = "https://hesevens.com"
+application_url = "https://app.hesevens.com"
 embedded = true
 
 [access_scopes]
@@ -47,7 +47,7 @@ api_version = "2026-10"
 
 [auth]
 # redirect_urls = [ "https://example.com/api/auth" ]
-redirect_urls = [ "https://hesevens.com/api/auth" ]
+redirect_urls = [ "https:/app.hesevens.com/api/auth" ]
 
 [build]
 automatically_update_urls_on_dev = true
