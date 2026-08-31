@@ -17,17 +17,18 @@ export default function PrivacyPolicy() {
       </p>
 
       <p>
-        H7 Bulk Discount ("we", "our", or "us") operates the H7 Bulk Discount
-        Shopify application. This Privacy Policy explains how we collect, use,
-        store, and protect information when merchants install and use our app.
+        Bulk Discount App by Heseven ("we", "our", or "us") operates the Bulk
+        Discount App by Heseven Shopify application. This Privacy Policy
+        explains how we collect, use, store, and protect information when
+        merchants install and use our app.
       </p>
 
       <h2>1. Information We Collect</h2>
 
       <p>
-        When you install and use H7 Bulk Discount, we may receive information
-        from Shopify that is necessary to authenticate your store and provide
-        the app's functionality.
+        When you install and use Bulk Discount App by Heseven, we may receive
+        information from Shopify that is necessary to authenticate your store
+        and provide the app&apos;s functionality.
       </p>
 
       <p>This may include:</p>
@@ -36,7 +37,7 @@ export default function PrivacyPolicy() {
         <li>Shopify store domain</li>
         <li>Shopify shop identifier</li>
         <li>Shopify authentication and session information</li>
-        <li>Information required to operate the app's discount functionality</li>
+        <li>Information required to operate the app&apos;s discount functionality</li>
       </ul>
 
       <h2>2. Information Collected Through Shopify APIs</h2>
@@ -53,8 +54,9 @@ export default function PrivacyPolicy() {
       <h2>3. Customer Information</h2>
 
       <p>
-        H7 Bulk Discount does not intentionally collect personal information
-        from a merchant's customers for advertising or marketing purposes.
+        Bulk Discount App by Heseven does not intentionally collect personal
+        information from a merchant&apos;s customers for advertising or
+        marketing purposes.
       </p>
 
       <p>
@@ -69,7 +71,7 @@ export default function PrivacyPolicy() {
 
       <ul>
         <li>Authenticate Shopify merchants and their stores</li>
-        <li>Provide and operate H7 Bulk Discount</li>
+        <li>Provide and operate Bulk Discount App by Heseven</li>
         <li>Store application configuration and session information</li>
         <li>Maintain and improve the application</li>
         <li>Respond to support requests</li>
@@ -92,15 +94,15 @@ export default function PrivacyPolicy() {
       <h2>6. Data Deletion</h2>
 
       <p>
-        When a Shopify merchant uninstalls the app, we process Shopify's
+        When a Shopify merchant uninstalls the app, we process Shopify&apos;s
         uninstall and privacy compliance requirements and delete applicable
         store session information from our database.
       </p>
 
       <p>
-        We also process Shopify privacy compliance requests, including
-        customer data requests, customer data deletion requests, and shop
-        deletion requests where applicable.
+        We also process Shopify privacy compliance requests, including customer
+        data requests, customer data deletion requests, and shop deletion
+        requests where applicable.
       </p>
 
       <h2>7. Data Security</h2>
@@ -115,7 +117,7 @@ export default function PrivacyPolicy() {
 
       <p>
         We use infrastructure and service providers necessary to operate the
-        application, including database hosting and Shopify's platform and
+        application, including database hosting and Shopify&apos;s platform and
         APIs. Such providers may process information on our behalf as necessary
         to provide the service.
       </p>
@@ -131,25 +133,25 @@ export default function PrivacyPolicy() {
       <h2>10. Cookies and Tracking</h2>
 
       <p>
-        H7 Bulk Discount does not use customer tracking technologies for
-        advertising purposes. Shopify and services required to authenticate and
-        operate the application may use cookies or similar technologies as
+        Bulk Discount App by Heseven does not use customer tracking technologies
+        for advertising purposes. Shopify and services required to authenticate
+        and operate the application may use cookies or similar technologies as
         necessary for their functionality.
       </p>
 
       <h2>11. Your Privacy Rights</h2>
 
       <p>
-        Depending on your location, you may have rights regarding your
-        personal information, including rights to access, correct, or delete
-        your information.
+        Depending on your location, you may have rights regarding your personal
+        information, including rights to access, correct, or delete your
+        information.
       </p>
 
       <h2>12. Changes to This Privacy Policy</h2>
 
       <p>
         We may update this Privacy Policy from time to time. Any changes will
-        be published on this page with an updated "Last updated" date.
+        be published on this page with an updated &quot;Last updated&quot; date.
       </p>
 
       <h2>13. Contact Us</h2>
