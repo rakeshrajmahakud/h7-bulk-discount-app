@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useFetcher } from "react-router";
+import { useFetcher, useLocation } from "react-router";
 import { authenticate } from "../shopify.server"; // this is the file that contains the shopify api key . It is used to authenticate the user 
 
 function escapeCsvValue(value) {
@@ -73,6 +73,10 @@ export const loader = async ({ request }) => {
 
   }
   catch(err){
+    if (err instanceof Response) {
+      throw err;
+    }
+
     console.error("Error fetching collections", err);
     return { ok:false, collections:[], error: "Failed to load collections" };
   }
@@ -255,6 +259,7 @@ export const action = async ({ request }) => {
 // front end code
 export default function CreateDiscountUI(){
   const fetcher = useFetcher();
+  const { search } = useLocation();
   const [title,setTitle] = useState("Bulk discount Offer");
   const [discountType, setDiscountType] = useState("percentage");
   const [value, setValue] = useState(10);
@@ -365,7 +370,7 @@ export default function CreateDiscountUI(){
 
     fetcher.submit(formData,{
       method: "POST",
-      action: "/app/creatediscount"
+      action: `/app/creatediscount${search}`
     });
 
   }

@@ -1,4 +1,4 @@
-import { redirect, useLoaderData, useNavigate } from "react-router";
+import { redirect, useLoaderData, useLocation, useNavigate } from "react-router";
 import { AppProvider } from "@shopify/shopify-app-react-router/react";
 import { login } from "../../shopify.server";
 
@@ -14,6 +14,7 @@ export const loader = async ({ request }) => {
 
 export default function App() {
   const navigate = useNavigate();
+  const { search } = useLocation();
 
   return (
     <AppProvider embedded={false}>
@@ -50,7 +51,10 @@ export default function App() {
                 </s-text>
               </s-stack>
 
-              <s-button variant="primary" onClick={() => navigate("/app/creatediscount")}>
+              <s-button
+                variant="primary"
+                onClick={() => navigate(`/app/creatediscount${search}`)}
+              >
                 Create Discount
               </s-button>
             </s-stack>

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useLoaderData, useNavigate } from "react-router";
+import { useLoaderData, useLocation, useNavigate } from "react-router";
 import { authenticate } from "../shopify.server";
 
 const TAB_OPTIONS = ["All", "Active", "Scheduled", "Expired"];
@@ -299,6 +299,10 @@ export const loader = async ({ request }) => {
     const { admin } = await authenticate.admin(request);
     return await loadDiscountDashboard(admin);
   } catch (error) {
+    if (error instanceof Response) {
+      throw error;
+    }
+
     return {
       ok: false,
       error: error instanceof Error ? error.message : "Failed to load discount dashboard",
@@ -414,6 +418,7 @@ function DonutChart({ counts }) {
 
 export default function Index() {
   const navigate = useNavigate();
+  const { search } = useLocation();
   const data = useLoaderData();
   const [activeTab, setActiveTab] = useState("All");
   const [activeType, setActiveType] = useState("All types");
@@ -436,9 +441,12 @@ export default function Index() {
   return (
     <s-page
       heading="Discounts"
-      inlineSize="base"
-      primaryAction={
-        <s-button variant="primary" onClick={() => navigate("/app/creatediscount")}>
+        inlineSize="base"
+        primaryAction={
+        <s-button
+          variant="primary"
+          onClick={() => navigate(`/app/creatediscount${search}`)}
+        >
           + Create discount
         </s-button>
       }
@@ -599,7 +607,10 @@ export default function Index() {
                     here once you create your first discount.
                   </s-paragraph>
                   <s-stack direction="inline" style={{ justifyContent: "center" }}>
-                    <s-button variant="primary" onClick={() => navigate("/app/creatediscount")}>
+                    <s-button
+                      variant="primary"
+                      onClick={() => navigate(`/app/creatediscount${search}`)}
+                    >
                       Create discount
                     </s-button>
                   </s-stack>
